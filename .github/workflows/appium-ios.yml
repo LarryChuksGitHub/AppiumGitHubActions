@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: '10.16.3'
     - run: |
-            npm install -g appiumv1.20.2
+            npm install -g appiumv1.22.3
             appium -v
             appium &>/dev/null &
     - name: Build with Maven
