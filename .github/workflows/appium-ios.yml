@@ -28,6 +28,6 @@ jobs:
     - run: |
             npm install -g appium
             appium -v
-            appium
-    - name: Build with Maven
+            appium &>/dev/null &
+    - name: Run Appium Test with Maven
       run: mvn clean test -Dtest=CreateTaskTests#createTaskiOS
