@@ -30,4 +30,4 @@ jobs:
             appium -v
             appium &>/dev/null &
     - name: Run Appium Test with Maven
-      run: mvn clean test -Dtest=CreateTaskTests#createTaskiOS
+      run: mvn clean test -Dtest=CreateTaskTests#testSwipeDHLAppiOS
