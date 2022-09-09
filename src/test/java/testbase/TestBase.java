@@ -32,10 +32,10 @@ public class TestBase {
         desiredCapabilities.setCapability("appium:automationName", "XCUITest");
         //desiredCapabilities.setCapability("appium:platformVersion", "15.5");
         desiredCapabilities.setCapability("appium:deviceName", "iPhone 11");
-        desiredCapabilities.setCapability("appium:safari:userSimulator", true);
+        //desiredCapabilities.setCapability("appium:safari:userSimulator", true);
         desiredCapabilities.setCapability("appium:isHeadless", true);
-        desiredCapabilities.setCapability("appium:app",System.getProperty("user.dir")+ "/apps/DailyCheck.app");
-        //desiredCapabilities.setCapability("appium:app",System.getProperty("user.dir")+ "/apps/DHLPaket.app");
+        //desiredCapabilities.setCapability("appium:app",System.getProperty("user.dir")+ "/apps/DailyCheck.app");
+        desiredCapabilities.setCapability("appium:app",System.getProperty("user.dir")+ "/apps/DHLPaket.app");
         //desiredCapabilities.setCapability("appium:app", System.getProperty("user.dir") + "/apps/UIKitCatalog.app");
         driver = new IOSDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
     }
